@@ -11,6 +11,8 @@ Moreover, this structure permit store, relate and apply reasoners mechanisms to 
 
 ## Aspect covered by OntoExpLine
 (tipos de dados relacionados - workflow, linha de experimento, metadados, domínio, tabela de classes e propriedades)
+OntoExpLine aims to provide the fundamental information required to understand and analyze scientific workflow-based on the derivable profile in their abstract activities. The structure uses domain data to create variations and metadata to explain their use in the context of experiment lines. This way, OntoExpLine is based on four ontologies: ProveONE [] to define the structure of the workflow, EDAM [] to take the domain data, Experiment Line [] to structure the derivations on the experiment line definitions, and DCMI[] to aggregate the metadata. 
+
 ## OntoExpLine Conceptual Model 
 (esquema de relacionamentos das classes)
 ## OntoExpLine Specification
