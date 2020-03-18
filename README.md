@@ -7,7 +7,7 @@ This repository presents a guide for OntoExpLine, an ontology for experiment lin
 Moreover, this structure permit store, relate and apply reasoners mechanisms to query provenance and domain data that were used to compose the scientific experiment and the data product generated during the experiment execution. OntoExpLine is composed of four specific modules: workflow structure, experiment line, domain-data branch, and metadata block.
 
 
-## Introdution
+## Introduction
 
 ## Aspect covered by OntoExpLine
 (tipos de dados relacionados - workflow, linha de experimento, metadados, domínio, tabela de classes e propriedades)
