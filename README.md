@@ -16,8 +16,13 @@ Another characteristic that ontologies apply in the workflow derivation context 
 Based on the above, this page presents OntoExpLine, a model for Experiment Lines that aims to support experiments derivation processes.  OntoExpLine is the result of the integration of task ontologies: [ProveONE][1] and [Experiment Line][2]; domain ontology branch: [EDAM][3]; and [Dublin Core classes][4], to improve data products about the task and domain concepts.
 
 ## OntoExpLine Conceptual Model 
-(esquema de relacionamentos das classes)
-![OntoExpLine structure](https://github.com/UFFeScience/OntoExpLine/blob/master/img/ontoexpline.png)
+
+This section introduces OntoExpLine on a diagram representing its conceptual model. As mentioned previously the OntoExpLine is the integration of four ontologies. This way the components and their relations are the same that the original ones. The conceptual modeling is shown in Figure 1. 
+
+![OntoExpLine structure](https://github.com/UFFeScience/OntoExpLine/blob/master/img/ontoexpline.png)*Figure 1, OntoExpLine Structure.*
+
+The ProveONE module is composed of three blocks that are used to link trace, workflow, and data instances.  The trace components are responsible for aggregate execution data related to agents (such as users and software components), and resource usage. The workflow representation block is composed of modules to describe and specify the workflow structure (such as programs, ports, and controllers).  On the other hand, the data module aims to describe and relate the data instances consumed and produced during the workflow execution.
+
 ## OntoExpLine Specification
 (descrição das classes - has super-class, is in domain of, is in range of - examplos de funcionamento)
 
