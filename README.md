@@ -22,10 +22,10 @@ Based on the above, this page presents OntoExpLine, a model for Experiment Lines
 
 ## References
 
-[1] http://jenkins-1.dataone.org/jenkins/view/Documentation%20Projects/job/ProvONE-Documentation-trunk/ws/provenance/ProvONE/v1/provone.html
+[1]:http://jenkins-1.dataone.org/jenkins/view/Documentation%20Projects/job/ProvONE-Documentation-trunk/ws/provenance/ProvONE/v1/provone.html
 
-[2] https://link.springer.com/chapter/10.1007/978-3-642-02279-1_20
+[2]:https://link.springer.com/chapter/10.1007/978-3-642-02279-1_20
 
-[3] http://edamontology.org/page
+[3]:http://edamontology.org/page
 
-[4] https://dublincore.org/
+[4]:https://dublincore.org/
