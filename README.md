@@ -21,7 +21,13 @@ This section introduces OntoExpLine on a diagram representing its conceptual mod
 
 ![OntoExpLine structure](https://github.com/UFFeScience/OntoExpLine/blob/master/img/ontoexpline.png)*Figure 1, OntoExpLine Structure.*
 
-The ProveONE module is composed of three blocks that are used to link trace, workflow, and data instances.  The __trace representation__ components are responsible for aggregate execution data related to agents (such as users and software components), and resource usage. The __workflow representation__ block is composed of modules to describe and specify the workflow structure (such as programs, ports, and controllers).  On the other hand, the __data representation__ module aims to describe and relate the data instances consumed and produced during the workflow execution.
+The ProveONE module is composed of three blocks that are used to link trace, workflow, and data instances.  The __trace representation__ components are responsible for aggregate execution data related to agents (such as users and software components), and resource usage. The __workflow representation__ block is composed of modules to describe and specify the workflow structure (such as programs, ports, and controllers).  On the other hand, the __data representation__ module aims to describe and relate the data instances consumed and produced during the workflow execution. The properties used to link the data instances are described in Table 1.
+
+| Property | Domain | Range | Usage Example|
+|---|---|---|---|
+| provone:hasSubProgram | Program | Program |Program p1 *hasSubProgram* p3|
+| provone:controlledBy | Program | Controller | Program p1 *controlledBy* p2|
+| provone:controls | Controller | Program | Controller p2 *controls* p3|
 
 ## OntoExpLine Specification
 (descrição das classes - has super-class, is in domain of, is in range of - examplos de funcionamento)
