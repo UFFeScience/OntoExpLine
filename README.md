@@ -28,6 +28,25 @@ The ProveONE module is composed of three blocks that are used to link trace, wor
 | provone:hasSubProgram | Program | Program |Program p1 *hasSubProgram* p3|
 | provone:controlledBy | Program | Controller | Program p1 *controlledBy* p2|
 | provone:controls | Controller | Program | Controller p2 *controls* p3|
+| provone:hasInPort	 | Program |  Port |  Program p1 *hasInPort* inp1 | 
+| provone:hasOutPort |  Program |  Port |   Program p1 *hasOutPort* outp1| 
+| provone:hasDefaultParam |  Port |  Entity |  Port inp1 *hasDefaultParam* data1 | 
+| provone:connectsTo |  Port |  Channel |  Port inp1 *connectsTo* ch1 | 
+| provone:wasDerivedFrom |  Program, Workflow |  Program, Workflow |  Program p4 *wasDerivedFrom* p1 | 
+| provone:used |  Execution |  Entity |  Execution p1ex1 *used* data1 | 
+| provone:wasGeneratedBy |  Entity |  Execution |  Entity data2 *wasGeneratedBy* p1ex1| 
+| provone:wasAssociatedWith |  Execution |  User |  Execution p1ex1 *wasAssociatedWith* userXQD| 
+| provone:wasInformedBy |  Execution |  Execution |  Execution p1ex2 *wasInformedBy* p1ex1 | 
+| provone:wasPartOf |  Execution |  Execution |  Execution p1ex2 *wasPartOf* p| 
+| provone:qualifiedAssociation |  Execution |  Association |  Execution pex1 *qualifiedAssociation* userXQD | 
+| provone:agent |  Association |  User |   Association assoc1 *agent* userXQD| 
+| provone:hadPlan |  Association |  program |  Association assoc1 *hadPlan* p1| 
+| provone:qualifiedUsage |  Execution |  Usage |  Execution pex2 *qualifiedUsage* data2 | 
+| provone:hadInPort |  Usage |  Port |  Usage usage1 *hadInPort* inp1 | 
+| provone:hadEntity |  Usage, Generation |  Entity |   Usage usage1 *hadEntity* data1| 
+| provone:qualifiedGeneration |  Execution & Generation &  Execution p1exe1 *qualifiedGeneration* ent1| 
+| provone:hadOutPort |  Generation |  Port |   Execution p1exe1 *hadOutPort* outp1| 
+| provone:hadMember |  Collection |  Entity |  Collection C1 *hadMember* E1 | 
 
 ## OntoExpLine Specification
 (descrição das classes - has super-class, is in domain of, is in range of - examplos de funcionamento)
