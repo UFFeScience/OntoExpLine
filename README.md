@@ -13,14 +13,13 @@ Scientific experiments involve several combinations of data and abstract activit
 
 Another characteristic that ontologies apply in the workflow derivation context is related to link different data types.  This way, domain data, prospective and retrospective provenance, and metadata annotations can be aggregated to the workflow specification. This possibility impact on the reproducibility and experiment reuse, because it helps other scientists reply the same experience and achieve datasets compatible with the originals.
 
-Based on the above, this page presents OntoExpLine, a model for Experiment Lines that aims to support experiments derivation processes.  OntoExpLine is the result of the integration of task ontologies ( [ProveONE][1] and [Experiment Line][2]), domain ontology branch ([EDAM][3]), and [Dublin Core classes][4], to improve data products about the task and domain concepts.
+Based on the above, this page presents OntoExpLine, a model for Experiment Lines that aims to support experiments derivation processes.  OntoExpLine is the result of the integration of task ontologies: [ProveONE][1] and [Experiment Line][2]; domain ontology branch: [EDAM][3]; and [Dublin Core classes][4], to improve data products about the task and domain concepts.
 
 ## OntoExpLine Conceptual Model 
 (esquema de relacionamentos das classes)
 ## OntoExpLine Specification
 (descrição das classes - has super-class, is in domain of, is in range of - examplos de funcionamento)
 
-## References
 
 [1]:http://jenkins-1.dataone.org/jenkins/view/Documentation%20Projects/job/ProvONE-Documentation-trunk/ws/provenance/ProvONE/v1/provone.html
 
