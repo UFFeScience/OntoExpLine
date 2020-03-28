@@ -44,7 +44,7 @@ The ProveONE module is composed of three blocks that are used to link trace, wor
 | provone:qualifiedUsage |  Execution |  Usage |  Execution pex2 *qualifiedUsage* data2 | 
 | provone:hadInPort |  Usage |  Port |  Usage usage1 *hadInPort* inp1 | 
 | provone:hadEntity |  Usage, Generation |  Entity |   Usage usage1 *hadEntity* data1| 
-| provone:qualifiedGeneration |  Execution & Generation &  Execution p1exe1 *qualifiedGeneration* ent1| 
+| provone:qualifiedGeneration |  Execution | Generation |  Execution p1exe1 *qualifiedGeneration* ent1| 
 | provone:hadOutPort |  Generation |  Port |   Execution p1exe1 *hadOutPort* outp1| 
 | provone:hadMember |  Collection |  Entity |  Collection C1 *hadMember* E1 | 
 
