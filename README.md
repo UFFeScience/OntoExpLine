@@ -61,7 +61,7 @@ The ProveONE module is composed of three blocks that are used to link trace, wor
 OntoExpLine was developed integrating different ontologies, using ProveOne as the base structure; this way, the ProveOne specifications can be found on this [link][1] on section 3.
 
 #### ExperimentLine:
-An Experiment line represents an experiment that composes the abstract workflows that are capable to be derived into multiple workflows.
+An Experiment line represents an experiment that is capable to be derived into multiple workflows.
 
 * __has super classe:__ 
 
