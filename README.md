@@ -80,6 +80,16 @@ A ProgramType represents a domain class that categorizes a software that execute
 
 * __has super classe:__ expline:Type
 
+#### Relation:
+text
+
+* __has super classe:__ expline:
+
+#### Attribute:
+text
+
+* __has super classe:__ expline:
+
 [1]:http://jenkins-1.dataone.org/jenkins/view/Documentation%20Projects/job/ProvONE-Documentation-trunk/ws/provenance/ProvONE/v1/provone.html
 
 [2]:https://link.springer.com/chapter/10.1007/978-3-642-02279-1_20
