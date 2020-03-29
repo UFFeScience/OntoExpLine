@@ -57,7 +57,9 @@ The ProveONE module is composed of three blocks that are used to link trace, wor
 
 
 ## OntoExpLine Specification
-(descrição das classes - has super-class, is in domain of, is in range of - examplos de funcionamento)
+
+OntoExpLine was developed integrating different ontologies, using ProveOne as the base structure; this way, the ProveOne specifications can be found on this [link][1] on section 3.
+
 
 
 
