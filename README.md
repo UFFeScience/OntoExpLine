@@ -60,16 +60,25 @@ The ProveONE module is composed of three blocks that are used to link trace, wor
 
 OntoExpLine was developed integrating different ontologies, using ProveOne as the base structure; this way, the ProveOne specifications can be found on this [link][1] on section 3.
 
-#### ProgramType
-A ProgramType represents a domain class that categorizes a software that executes a specific domain task. A ProgramType is an atomic concept that can be used to categorize a program in one or more types.
+#### ExperimentLine:
+An Experiment line represents an experiment that composes the abstract workflows that are capable to be derived into multiple workflows.
 
-__has super classe:__ Type
+* __has super classe:__ 
 
-#### ActivityType
+#### AbstractActivity:
+An AbstractActivity establishes an operation but no specify how to do it. In the abstract workflow  context, an abstract activity represents the blocks that compose the flow.
+
+* __has super classe:__ expline:ExperimentLine
+
+#### ActivityType:
 An ActivityType represents the obligatoriness level of an abstract activity in the workflow. An ActivityType is an atomic concept that can be used to categorize an abstract activity in just one type.
 
-__has super classe:__ Type
+* __has super classe:__ expline:Type
 
+#### ProgramType:
+A ProgramType represents a domain class that categorizes a software that executes a specific domain task. A ProgramType is an atomic concept that can be used to categorize a program in one or more types.
+
+* __has super classe:__ expline:Type
 
 [1]:http://jenkins-1.dataone.org/jenkins/view/Documentation%20Projects/job/ProvONE-Documentation-trunk/ws/provenance/ProvONE/v1/provone.html
 
