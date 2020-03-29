@@ -16,9 +16,41 @@ Another characteristic that ontologies apply in the workflow derivation context 
 Based on the above, this page presents OntoExpLine, a model for Experiment Lines that aims to support experiments derivation processes.  OntoExpLine is the result of the integration of task ontologies: [ProveONE][1] and [Experiment Line][2]; domain ontology branch: [EDAM][3]; and [Dublin Core classes][4], to improve data products about the task and domain concepts.
 
 ## OntoExpLine Conceptual Model 
-(esquema de relacionamentos das classes)
+
+This section introduces OntoExpLine on a diagram representing its conceptual model. As mentioned previously the OntoExpLine is the integration of four ontologies. This way the components and their relations are the same that the original ones. The conceptual modeling is shown in Figure 1. 
+
+![OntoExpLine structure](https://github.com/UFFeScience/OntoExpLine/blob/master/img/ontoexpline.png)*Figure 1, OntoExpLine Structure.*
+
+The ProveONE module is composed of three blocks that are used to link trace, workflow, and data instances.  The __trace representation__ components are responsible for aggregate execution data related to agents (such as users and software components), and resource usage. The __workflow representation__ block is composed of modules to describe and specify the workflow structure (such as programs, ports, and controllers).  On the other hand, the __data representation__ module aims to describe and relate the data instances consumed and produced during the workflow execution. The properties used to link the data instances are described in Table 1.
+
+| Property | Domain | Range | Usage Example|
+|---|---|---|---|
+| provone:hasSubProgram | Program | Program |Program p1 *hasSubProgram* p3|
+| provone:controlledBy | Program | Controller | Program p1 *controlledBy* p2|
+| provone:controls | Controller | Program | Controller p2 *controls* p3|
+| provone:hasInPort	 | Program |  Port |  Program p1 *hasInPort* inp1 | 
+| provone:hasOutPort |  Program |  Port |   Program p1 *hasOutPort* outp1| 
+| provone:hasDefaultParam |  Port |  Entity |  Port inp1 *hasDefaultParam* data1 | 
+| provone:connectsTo |  Port |  Channel |  Port inp1 *connectsTo* ch1 | 
+| provone:wasDerivedFrom |  Program, Workflow |  Program, Workflow |  Program p4 *wasDerivedFrom* p1 | 
+| provone:used |  Execution |  Entity |  Execution p1ex1 *used* data1 | 
+| provone:wasGeneratedBy |  Entity |  Execution |  Entity data2 *wasGeneratedBy* p1ex1| 
+| provone:wasAssociatedWith |  Execution |  User |  Execution p1ex1 *wasAssociatedWith* userXQD| 
+| provone:wasInformedBy |  Execution |  Execution |  Execution p1ex2 *wasInformedBy* p1ex1 | 
+| provone:wasPartOf |  Execution |  Execution |  Execution p1ex2 *wasPartOf* p| 
+| provone:qualifiedAssociation |  Execution |  Association |  Execution pex1 *qualifiedAssociation* userXQD | 
+| provone:agent |  Association |  User |   Association assoc1 *agent* userXQD| 
+| provone:hadPlan |  Association |  program |  Association assoc1 *hadPlan* p1| 
+| provone:qualifiedUsage |  Execution |  Usage |  Execution pex2 *qualifiedUsage* data2 | 
+| provone:hadInPort |  Usage |  Port |  Usage usage1 *hadInPort* inp1 | 
+| provone:hadEntity |  Usage, Generation |  Entity |   Usage usage1 *hadEntity* data1| 
+| provone:qualifiedGeneration |  Execution | Generation |  Execution p1exe1 *qualifiedGeneration* ent1| 
+| provone:hadOutPort |  Generation |  Port |   Execution p1exe1 *hadOutPort* outp1| 
+| provone:hadMember |  Collection |  Entity |  Collection C1 *hadMember* E1 | 
+
 ## OntoExpLine Specification
 (descrição das classes - has super-class, is in domain of, is in range of - examplos de funcionamento)
+
 
 
 [1]:http://jenkins-1.dataone.org/jenkins/view/Documentation%20Projects/job/ProvONE-Documentation-trunk/ws/provenance/ProvONE/v1/provone.html
