@@ -46,9 +46,14 @@ The ProveONE module is composed of three blocks that are used to link trace, wor
 | provone:hadEntity |  Usage, Generation |  Entity |   Usage usage1 *hadEntity* data1| 
 | provone:qualifiedGeneration |  Execution | Generation |  Execution p1exe1 *qualifiedGeneration* ent1| 
 | provone:hadOutPort |  Generation |  Port |   Execution p1exe1 *hadOutPort* outp1| 
-| provone:hadMember |  Collection |  Entity |  Collection C1 *hadMember* E1 | 
+| provone:hadMember |  Collection |  Entity |  Collection c1 *hadMember* e1 | 
 | expline:hasType| AbstractActivity/Program| ActivityType/ProgramType| AbstractActivity a1 *hasType* Mandatory|
 | expline:implements| Program | AbstractActivity| Program p1 *implements* a1|
+| expline:belongsTo| AbstractActivity | ExperimentLine | AbstractActivity a1 *belongsTo* l1 |
+| expline:hasRelation| AbstractActivity | Relation | AbstractActivity a1 *hasRelation* rel1 |
+| expline:hasMetadata| AbstractActivity/Program | Metadata | AbstractActivity a1 *hasMetadata* meta1 |
+| expline:composedBy| Collection | Attribute | Collection c1 *composedBy* att1 |
+
 
 ## OntoExpLine Specification
 (descrição das classes - has super-class, is in domain of, is in range of - examplos de funcionamento)
