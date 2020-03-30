@@ -81,9 +81,9 @@ A ProgramType represents a domain class that categorizes a software that execute
 * __has super classe:__ expline:Type
 
 #### Relation:
-text
+A Relation is a link that connects two abstract activities. In the experiment line context is possible to link two activities using more than one relation.
 
-* __has super classe:__ expline:
+* __has super classe:__ expline:ExperimentLine
 
 #### Attribute:
 text
