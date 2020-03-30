@@ -66,7 +66,7 @@ An Experiment line represents an experiment that is capable to be derived into m
 * __has super classe:__ 
 
 #### AbstractActivity:
-An AbstractActivity establishes an operation but no specify how to do it. In the abstract workflow  context, an abstract activity represents the blocks that compose the flow.
+An AbstractActivity establishes an operation, but no specify how to do it. In the abstract workflow context, an abstract activity represents the blocks that compose the workflow.
 
 * __has super classe:__ expline:ExperimentLine
 
