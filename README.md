@@ -86,9 +86,9 @@ A Relation is a link that connects two abstract activities. In the experiment li
 * __has super classe:__ expline:ExperimentLine
 
 #### Attribute:
-text
+An attribute is a component of a collection. Attributes differ from entities in the level, while entities are related to the concrete level, attributes are related to the abstract level.
 
-* __has super classe:__ expline:
+* __has super classe:__ expline:ExperimentLine
 
 [1]:http://jenkins-1.dataone.org/jenkins/view/Documentation%20Projects/job/ProvONE-Documentation-trunk/ws/provenance/ProvONE/v1/provone.html
 
