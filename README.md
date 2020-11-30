@@ -31,7 +31,7 @@ The metadata elements are defined on the red branch. All the other elements are 
 
 Finally, the domain operations represented by the green modules are related to OntoExpLine domain specialization. This way, the operations executed by the workflow are defined by domain concepts imported by other ontologies. The scientist can apply different ontologies in order to define the experiment abstraction level.
 
-The properties used to link the data instances defined by the four branches are described in Table 1.
+The properties used to link the data instances defined on the OntoExpLine branches are described in Table 1.
 
 | Property | Domain | Range | Usage Example|
 |---|---|---|---|
