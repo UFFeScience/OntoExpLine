@@ -60,12 +60,12 @@ The ProveONE module is composed of three blocks that are used to link trace, wor
 
 ## OntoExpLine Specification
 
-OntoExpLine was developed integrating different ontologies, using ProveOne as the base structure; this way, the ProveOne specifications can be found on this [link][1] on section 3.
+OntoExpLine was developed integrating different ontologies, using ProveOne as the base structure; this way, the ProveOne specifications can be found on this [link][1].
 
 #### ExperimentLine:
 An Experiment line represents an experiment that is capable to be derived into multiple workflows.
 
-* __has super classe:__ 
+* __has super classe:__ Thing
 
 #### AbstractActivity:
 An AbstractActivity establishes an operation, but no specify how to do it. In the abstract workflow context, an abstract activity represents the blocks that compose the workflow.
