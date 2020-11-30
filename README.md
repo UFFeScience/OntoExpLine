@@ -23,7 +23,15 @@ This section introduces OntoExpLine on a diagram representing its conceptual mod
 |:--:| 
 | *Figure 1, OntoExpLine Structure.*|
 
-The ProveONE module is composed of three blocks that are used to link trace, workflow, and data instances.  The __trace representation__ components are responsible for aggregate execution data related to agents (such as users and software components), and resource usage. The __workflow representation__ block is composed of modules to describe and specify the workflow structure (such as programs, ports, and controllers).  On the other hand, the __data representation__ module aims to describe and relate the data instances consumed and produced during the workflow execution. The properties used to link the data instances are described in Table 1.
+The ProveONE module (represented in blue) comprises concepts to describe the workflow structure at the concrete level—this way, the data about implementers and input/output entities are defined in this branch.
+
+The yellow branch is used to characterize the workflow according to experiment line concepts - differently of ProvONE components, this branch represents the experiment at the abstract level. The abstraction level used to define the experiment is defined using this branch.
+
+The metadata elements are defined on the red branch. All the other elements are described using the metadata components defined in this branch. Some specific types of elements can need a specific group of metadata (e. g specific parameters to programs that run locally or in the clouds). The scientist sets these requirements. 
+
+Finally, the domain operations represented by the green modules are related to OntoExpLine domain specialization. This way, the operations executed by the workflow are defined by domain concepts imported by other ontologies. The scientist can apply different ontologies in order to define the experiment abstraction level.
+
+The properties used to link the data instances defined by the four branches are described in Table 1.
 
 | Property | Domain | Range | Usage Example|
 |---|---|---|---|
