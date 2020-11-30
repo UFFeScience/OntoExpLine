@@ -23,13 +23,13 @@ This section introduces OntoExpLine on a diagram representing its conceptual mod
 |:--:| 
 | *Figure 1, OntoExpLine Structure.*|
 
-The **Workflow module** consists of ProvONE ontology (represented in blue) and comprises concepts to describe the workflow structure at the concrete level—this way, the data about implementers and input/output entities are defined in this branch.
+The **Workflow module** consists of ProvONE ontology (represented in blue) and comprises concepts to describe the workflow structure at the concrete level—this way, the data about implementers and input/output entities are instantiated in this branch.
 
-The yellow branch consists of **Experiment Line module** and is used to characterize the workflow according to Experiment Line concepts - differently of ProvONE components, this branch represents the experiment at the abstract level. The abstraction level used to define the experiment is defined using this branch.
+The yellow branch consists of the **Experiment Line module** and is used to characterize the workflow according to Experiment Line concepts - differently of ProvONE components, this branch represents the experiment at the abstract level. The workflow abstraction level is defined in this branch using the concept "abstract_activity" that represents the workflow modules.
 
-The **Metadata module** is represented on Figure 1 by the red branch. All the other elements are described using the metadata components defined in this branch. Some specific types of elements can need a specific group of metadata (e. g specific parameters to programs that run locally or in the clouds). The scientist sets these requirements. 
+The **Metadata module** is represented in Figure 1 by the red branch. All the other concepts are described using the metadata components defined in this branch. Some specific types of elements can need a specific group of metadata (e. g specific parameters to programs that run locally or in the clouds). The scientist sets these requirements.
 
-Finally, the **Domain Operation module** represented by the green concepts are related to OntoExpLine domain specialization. This way, the operations executed by the workflow are defined by domain concepts imported by other ontologies. The scientist can apply different ontologies in order to define the experiment abstraction level.
+Finally, the **Domain Operation module** represented by the green concepts is related to the specialization of OntoExpLine to a domain. This way, the operations executed by the workflow are defined by domain concepts imported by other ontologies. The scientist can apply different ontologies in order to define the experiment abstraction level.
 
 The properties used to link the data instances defined on the OntoExpLine branches are described in Table 1.
 
