@@ -19,7 +19,7 @@ Based on the above, this page presents OntoExpLine, a model for Experiment Lines
 
 This section introduces OntoExpLine on a diagram representing its conceptual model. As mentioned previously the OntoExpLine is the integration of four ontologies. This way the components and their relations are the same that the original ones. The conceptual modeling is shown in Figure 1. 
 
-![OntoExpLine structure](https://github.com/UFFeScience/OntoExpLine/blob/master/img/ontoexpline.png)*Figure 1, OntoExpLine Structure.*
+![OntoExpLine structure](https://github.com/UFFeScience/OntoExpLine/blob/master/img/ontoexpline2.png)*Figure 1, OntoExpLine Structure.*
 
 The ProveONE module is composed of three blocks that are used to link trace, workflow, and data instances.  The __trace representation__ components are responsible for aggregate execution data related to agents (such as users and software components), and resource usage. The __workflow representation__ block is composed of modules to describe and specify the workflow structure (such as programs, ports, and controllers).  On the other hand, the __data representation__ module aims to describe and relate the data instances consumed and produced during the workflow execution. The properties used to link the data instances are described in Table 1.
 
